@@ -1,0 +1,18 @@
+# Site settings
+title: Zachary Babtkis
+email: zackbabtkis@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Zachary &lt;Zack /&gt; Babtkis is a JavaScript engineer at The Mobile Majority. He enjoys coding, hiking, yoga and inspiring stories.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://zacharybabtkis.com" # the base hostname & protocol for your site
+twitter_username: zbabtkis
+github_username:  zigzackattack
+
+# Build settings
+markdown: kramdown
+
+collections:
+  projects:
+    output: true
+    permalink: /portfolio/:path/
+    

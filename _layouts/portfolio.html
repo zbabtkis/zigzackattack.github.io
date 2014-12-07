@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<h4 class="ui header">
+  {{page.content}}
+</h4>
+
+{% assign projects = site.projects | sort:"contrib" %}
+
+<div id="portfolio-grid" class="ui two column stackable grid">
+{% for project in projects %}
+  <div class="column">
+    <div class="ui fluid card">
+      <a class="image" href="{{project.link}}" target="_blank">
+        <img src="{{site.baseurl}}/img/projects/{{project.screenshot}}">
+      </a>
+      <div class="content">
+        <header class="header">
+          <a href="{{project.link}}" target="_blank">
+            {{project.title}}
+          </a>
+        </header>
+        <div class="description">
+          {{project.content}}
+        </div>
+      </div>
+      <div class="extra content">
+        {% for technology in project.technologies %}
+          <div class="ui mini label">
+            {{ technology }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>

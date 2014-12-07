@@ -1,0 +1,19 @@
+{
+  "name": "my-blog",
+  "version": "0.0.0",
+  "authors": [
+    "Zachary Babtkis <zackbabtkis@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic-ui": "~1.1.2",
+    "masonry": "~3.2.1"
+  }
+}
